@@ -23,13 +23,14 @@ export const MagicWorld = () => {
             ))}
           </div>
         </div>
-        <div className="about-school">
-          <CastleAnimation castle={star} stars={light} />
+        <div className="about-school reverse">
+          
           <div className="text-history">
             <h3>History</h3>
             <p>{hogwarts.earlyHistory}</p>
             <p>{hogwarts.middleHistory}</p>
           </div>
+          <CastleAnimation castle={star} stars={light} />
         </div>
         <div className="about-school">
           <CastleAnimation castle={chapeu} stars={chapeu2} />

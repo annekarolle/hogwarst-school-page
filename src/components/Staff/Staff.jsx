@@ -116,8 +116,8 @@ export const Staff = () => {
               <motion.img
                 src={item.image}
                 alt=""
-                initial={{ filter: "brightness(1)" }}
-                animate={{ filter: "brightness(3)" }}
+                initial={{ transform: "scale(1)" }}
+                animate={{ transform: "scale(1.1)" }}
                 transition={{
                   duration: 4,
                   repeat: Infinity,

@@ -1,13 +1,25 @@
-import { useContext} from "react";
+ 
 import "../src/style/App.css";
-import { AuthContext } from "./context/AuthContext";
+ 
 import { Home } from "./pages/Home/Home";
 import { WelcomePage } from "./pages/welcomePage/WelcomePage";
 
-function App() {
-  const { enter, setEnter } = useContext(AuthContext);
+import { Route, Routes } from "react-router-dom";
+import { BookOfSpells } from "./pages/BookOfSpells/BookOfSpells";
 
-  return <div className="App"> { enter ? <WelcomePage/> :  <Home/>  }</div>;
+function App() {
+  // const { enter, setEnter } = useContext(AuthContext);
+
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<WelcomePage />} />
+   
+        <Route path="/bookOfSpells" element={<BookOfSpells />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

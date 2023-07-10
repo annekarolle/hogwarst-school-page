@@ -6,16 +6,19 @@ import hogwarst from "../../Assests/img/hp/2.png";
 import { SlArrowDown } from "react-icons/sl"; 
 import { AuthContext } from "../../context/AuthContext";
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
  
 
 export const WelcomePage = () => {
   const { enter, setEnter } = useContext(AuthContext);
   const [open, setOpen] = useState(false);
 
+  const navigate = useNavigate()
 
   const handleClick = () => {
-    setEnter(true);    
-    console.log(enter)
+    // setEnter(true);    
+    // console.log(enter)
+    navigate("/home")
   };
 
   return (
@@ -36,7 +39,7 @@ export const WelcomePage = () => {
           src={hogwarst}
           alt=""
           initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 1] }}
+          animate={{ opacity: [0, 1, 1]}}
           transition={{ duration: 4, delay: 4 }}
           style={{ position: "absolute", top: 0, left: 0, width: "100%" }}
         />

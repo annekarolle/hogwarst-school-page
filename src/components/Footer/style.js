@@ -3,14 +3,17 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 10em;
   align-items: center;
   justify-content: space-between;
   align-content: center;
-  box-sizing: border-box;
-  padding: 45px 59px;
+  box-sizing: border-box; 
+  padding-left: 5em;
+  padding-right: 5em;
+
+
   img {
-    height: 26.34px;
+    height: 2em;
   }
 
   p {
@@ -48,6 +51,21 @@ export const StyledFooter = styled.footer`
     padding: 45px 59px;
     img {
       height: 20px;
+    }
+  }
+
+  .copyrigths{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 1em;
+
+    p{
+      margin-top: 1em;
+      font-size: 10px;
+      text-align: center;
     }
   }
 `;

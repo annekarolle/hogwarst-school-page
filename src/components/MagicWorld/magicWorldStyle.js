@@ -26,6 +26,7 @@ align-content: center;
     align-items: center;
     justify-content: center;  
     width: 100%;
+    margin-top: 2em;
 }
 
 .text-history{
@@ -33,6 +34,13 @@ align-content: center;
     flex-direction: column;
     width: 80%;   
     margin: 0 auto;
+}
+
+@media (max-width: 937px) {
+
+    .about-school.reverse{
+      flex-direction  : column-reverse;
+    }
 }
 
 h2{

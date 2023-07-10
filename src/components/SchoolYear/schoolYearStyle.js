@@ -1,4 +1,4 @@
-import { DiVim } from "react-icons/di";
+ 
 import { styled } from "styled-components";
 
 export const SchoolYearContainer = styled.div`
@@ -21,64 +21,61 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;   
+    flex-wrap: wrap;
     gap: 2em;
     margin-top: 1em;    
     width: 80%;
-    border-top: 2px solid var(--gold);  
+    /* border-top: 2px solid var(--gold);   */
 }
  
 li{
   display: flex;
   flex-direction: column; 
-  height: 200px;
-  
-  
-  
-    /* border: 6px solid var(--gold-2);
-    background-color: var(--gold-9); */
+  height: 200px;  
     
 }
 
 button:hover{
-    transform: scale(1.05);
-    filter: brightness(2);
+    transform: scale(1.05);   
   
 }
 
 button{
     border: none;
-    background-color: transparent;
+    background-color: var(--gold-9);
     color: var(--gold);
     cursor: pointer;   
     position: relative;
     padding-left: 5px;
     font-weight: 600;
+    width: 10em;
+    height: 10em;
+    border: 5px solid var(--gold);
+    border-radius: 50%;
     
     
 }
 
 button.selected{
-    border-left: 2px solid var(--gold);
+    display: none;
 }
 
 h2{
     margin-top: 1em;
 }
-.school-year-description{
-    
+.school-year-description{    
+    border: 2px solid var(--gold-9);
+    background-color: var(--gold);
+    width: 10em;
+    height: 10em;
+    font-size: 14px;
+    color: var(--gold-9);
     display: flex;
-    flex-direction: column;
-     width: 200px;  
-     height: 150px;
-     position: absolute;
-     margin-top: 1em;
-     border: 2px solid var(--gold);
-     background-color: var(--gold-9);
     justify-content: center;
-    align-items: center;    
-    border-bottom-right-radius: 4%;
-    border-top-right-radius: 4%;
+    align-items: center;  
 }
+
+
 p{
     padding: 10px;
 }

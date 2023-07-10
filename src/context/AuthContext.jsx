@@ -7,6 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [house, setHouse] = useState([]);
   const [spells, setSpells] = useState({});
   const [enter, setEnter] = useState(false)
+  const [ openModal, setOpenModal] = useState(false)
 
   useEffect(() => {
     const desiredHouse = 'gryffindor';
@@ -42,7 +43,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   return (
-    <AuthContext.Provider value={{ harryPotterAPI, enter, setEnter, house, setHouse, spells, setSpells, getSpells }}>
+    <AuthContext.Provider value={{ harryPotterAPI, enter, setEnter, house, setHouse, spells, setSpells, getSpells, openModal, setOpenModal }}>
       {children}
     </AuthContext.Provider>
   );

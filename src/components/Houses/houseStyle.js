@@ -6,6 +6,7 @@ width: 100%;
 display: flex;
 flex-direction: column;
 margin-bottom: 2em;
+margin-top: 2em;
 
 p{
   color: var(--gold);

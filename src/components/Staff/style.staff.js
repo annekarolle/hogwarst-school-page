@@ -8,7 +8,7 @@ align-items: center;
 align-content: center;
 
 .teachers, .staff{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -17,6 +17,28 @@ align-content: center;
    
     justify-content: center;
 }
+
+.teachers{ 
+    padding: 1em;
+    width: 80%;
+
+}
+
+
+.teachers::-webkit-scrollbar {
+    height: 0.6em;
+  }
+
+  .teachers::-webkit-scrollbar-track {
+    background-color: var(--bg);
+  }
+
+  .teachers::-webkit-scrollbar-thumb {
+    background-color: var(--gold-5);
+    border-radius: 20px;
+  }
+
+
 
 .teachers li{
     display: flex;
@@ -27,23 +49,32 @@ align-content: center;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     padding:1em;
+    margin-bottom: 1em;
     background-color: var(--gold-7);
     border: 5px solid var(--gold-3);
 }
 
-.staff, .subjects{
+
+
+
+ .subjects{
     background-color: #30241b80;
     padding: 1em;
-    
+
+}
+
+.staff{
+    background-color: var(--gold-6);
+    padding: 1em;
+    margin-bottom: 1em;
+    color:var(--gold-1);
 }
 .staff li{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;     
-   
-    /* background-color: var(--gold-8);
-    border: 5px solid var(--gold-3); */
+ 
 }
 h2{
     filter: brightness(2);
@@ -87,5 +118,58 @@ span{
 .subject-extra{
     margin-top: 1em;
     filter: brightness(2);
+}
+
+@media  (max-width: 200px)  {
+    .teachers{
+        flex-direction: column;   
+        flex-wrap: wrap;
+        width: 80%;    
+        justify-content: flex-start;
+   
+        
+
+    }
+
+   
+}
+
+@media  (max-width: 349px)  {
+    .teachers{
+        flex-direction: row;
+        overflow-x: scroll;     
+        flex-wrap: nowrap;
+        width: 100px;    
+        justify-content: flex-start;
+        height: 220px;  
+        
+
+    }
+
+   
+}
+
+@media (max-width: 350px) {
+    .teachers{
+        flex-direction: row;
+        overflow-x: scroll;     
+        flex-wrap: nowrap;
+        width: 200px;    
+        justify-content: flex-start;
+        height: 220px;        
+    }
+}
+
+@media (max-width: 515px) {
+    .teachers{
+        flex-direction: row;
+        overflow-x: scroll;     
+        flex-wrap: nowrap;    
+        width:  350px;
+        justify-content: flex-start;
+        height: 220px;
+        
+
+    }
 }
 `

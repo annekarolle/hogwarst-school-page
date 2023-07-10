@@ -116,10 +116,13 @@ extraCurricularActivity: [
     "Sphinx Club",
     "Hippogriff Club"
 ],
-evaluantionSystem: [
-    "The evaluation system at Hogwarts consisted of routine homework grading, which was similar to that of Muggle students. As students progressed higher in their education, they faced more challenging exams. The Ordinary Wizarding Levels (O.W.L.s) were standardized tests taken by fifth-year students. These exams determined the subjects they could continue studying in their final years at Hogwarts, equivalent to Muggle O-levels.",
-    "For exceptional students, there were optional Nastily Exhausting Wizarding Tests (N.E.W.T.s), similar to A-levels for Muggle students. To qualify for N.E.W.T.-level studies, students needed to achieve high marks in their O.W.L. exams. Failing to meet the requirements meant they would not be able to handle the advanced subjects. N.E.W.T. tests were administered in the seventh year and could not be retaken.",
-    "The Ordinary Wizarding Level grading system included pass grades: Outstanding (O), Exceeds Expectations (E), and Acceptable (A). Fail grades included Poor (P), Dreadful (D), and Troll (T). Each grade had implications for further study options and academic credit. This grading system was also used in other exams like W.O.M.B.A.T.s, and it was likely employed in N.E.W.T.s as well, making it the universal exam grading system in wizarding Britain.",
+evaluationSystem:[
+  {name: "Evaluation System",
+  description: "The evaluation system at Hogwarts consisted of routine homework grading, which was similar to that of Muggle students. As students progressed higher in their education, they faced more challenging exams. "},
+  {description: "The Ordinary Wizarding Levels (O.W.L.s) were standardized tests taken by fifth-year students. These exams determined the subjects they could continue studying in their final years at Hogwarts, equivalent to Muggle O-levels. The Ordinary Wizarding Level grading system included pass grades: Outstanding (O), Exceeds Expectations (E), and Acceptable (A). Fail grades included Poor (P), Dreadful (D), and Troll (T). Each grade had implications for further study options and academic credit. This grading system was also used in other exams like W.O.M.B.A.T.s, and it was likely employed in N.E.W.T.s as well, making it the universal exam grading system in wizarding Britain.", 
+  name: "O.W.L.s"},
+  {description: "For exceptional students, there were optional Nastily Exhausting Wizarding Tests (N.E.W.T.s), similar to A-levels for Muggle students. To qualify for N.E.W.T.-level studies, students needed to achieve high marks in their O.W.L. exams. Failing to meet the requirements meant they would not be able to handle the advanced subjects. N.E.W.T. tests were administered in the seventh year and could not be retaken.",
+  name: "N.E.W.T.s"}
  
 ],
 selection: [

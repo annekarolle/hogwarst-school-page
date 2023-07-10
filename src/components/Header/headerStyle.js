@@ -5,7 +5,8 @@ export const ContainerHeader = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-    align-items: center;
+  align-items: center;
+  height: 5em;
 
   .navegador {
     display: flex;
@@ -18,7 +19,7 @@ export const ContainerHeader = styled.div`
     margin-top: 1em;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     flex-direction: column;  
     
     .navegador{
@@ -137,5 +138,9 @@ export const ContainerHeader = styled.div`
 
 .dropdown-open .dropdown-options {
   display: block;
+}
+
+.btn-logo{
+  cursor: pointer;
 }
 `;

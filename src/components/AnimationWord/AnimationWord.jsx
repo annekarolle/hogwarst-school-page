@@ -3,7 +3,7 @@ import React from "react";
 import {  motion } from "framer-motion";
 
 
-export const AnimationWord = ({ size, word, color }) => {
+export const AnimationWord = ( word) => {
   const letterVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -12,7 +12,7 @@ export const AnimationWord = ({ size, word, color }) => {
   return (
     <div>
       <motion.span
-        style={{ display: "inline-block", fontSize: `${size}`, color: `${color}` }}
+        style={{ display: "inline-block", fontSize:"2em"}}
         initial="hidden"
         animate="visible"
       >
