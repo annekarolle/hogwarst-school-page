@@ -11,6 +11,44 @@ height: 100%;
 align-items: center;
 justify-content: flex-start;
 
+.filter-container{
+  width: 60%;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #36281e;
+  border: 2px solid var(--gold-4);
+  align-content: center;
+  border-radius: 5px;
+}
+
+.filter-button{
+  color: var(--gold); 
+  font-size: 12px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  
+}
+
+input{
+  background-color: #36281e;
+  width: 90%;
+  border: none;
+  outline: none;
+
+  padding-left: 2em;
+  color: var(--gold); 
+  height: 80%;
+}
+
+/* .filter-button{
+  border-radius: 50%;
+  background-color: var(--gold-3);
+} */
+
 .spell-tittle{
   font-size: 14px;
  
@@ -101,6 +139,7 @@ li:hover{
     align-items: center  ;
     align-content: center;
     justify-content: center;
+    gap: 5em;
 }
 
 .spell-container{
@@ -136,7 +175,7 @@ display: flex;
 
 img{
     object-fit: contain;
-    width: 70%;
+    width: 20%;
     
 }
 

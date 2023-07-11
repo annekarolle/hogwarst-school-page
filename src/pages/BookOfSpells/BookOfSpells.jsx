@@ -4,11 +4,11 @@ import { Spells } from "../../components/Spells/Spells.jsx"
 import { PageContainer } from "./style"
 import book from "../../Assests/img/hp/sub/Camada 2.png"
 import book2 from "../../Assests/img/hp/sub/Camada 6.png"
-import { Lights } from "../../components/Ligths/ligths"
+ 
 
 export const BookOfSpells = () =>{
 
-    return (
+    return (       
        <PageContainer>
         <HeaderComp /> 
         {/* <div className="ligths-container main">
@@ -38,5 +38,6 @@ export const BookOfSpells = () =>{
         </div>
         <Footer />
        </PageContainer>
+     
     )
 }

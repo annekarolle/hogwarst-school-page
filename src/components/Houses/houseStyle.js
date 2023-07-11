@@ -186,8 +186,11 @@ a:hover{
     flex-direction: row;
     gap: 1em;
     align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: center;  
+
+    @media (max-width: 729px) {
+      flex-wrap: wrap;
+}
 
 }
 
@@ -216,13 +219,25 @@ margin-top: 1em;
 
 .text{
   padding: 1em;
-  width: 60%;  
+  width: 60%; 
+  @media (max-width: 729px) {
+    width: 90%; 
 }
+ 
+}
+
+
 
 
 
 .infos p{
   color: white;
+}
+
+.infos{
+  @media (max-width: 729px) {
+    width: 90%; 
+}
 }
 
 .patterns{

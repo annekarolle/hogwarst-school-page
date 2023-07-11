@@ -3,25 +3,23 @@ import castelo from "../../Assests/img/hp/casteloo.png";
 import { motion } from "framer-motion";
 import luzes from "../../Assests/img/hp/castelo2o.png";
 import hogwarst from "../../Assests/img/hp/2.png";
-import { SlArrowDown } from "react-icons/sl"; 
-import { AuthContext } from "../../context/AuthContext";
-import { useContext, useState } from "react";
+import { SlArrowDown } from "react-icons/sl";  
 import { useNavigate } from "react-router-dom";
  
+ 
 
-export const WelcomePage = () => {
-  const { enter, setEnter } = useContext(AuthContext);
-  const [open, setOpen] = useState(false);
+export const WelcomePage = ( ) => {
+  
 
   const navigate = useNavigate()
-
-  const handleClick = () => {
-    // setEnter(true);    
-    // console.log(enter)
+  const handleClick = () => {  
     navigate("/home")
   };
 
+ 
+
   return (
+    
     <ContainerWelcomePage >
      <div className={`container-imagem-castelo`}>
         <img src={castelo} alt="" className="castelo" />
@@ -58,5 +56,5 @@ export const WelcomePage = () => {
         </button>
       </div>
     </ContainerWelcomePage>
-  );
+  )
 };

@@ -1,7 +1,29 @@
 
+## Technologies Used
+
+<strong></strong>
+<ul>
+  <li>
+    <strong>HTML5: </strong> Markup language for structuring the application's
+    web pages.
+  </li>
+  <li>
+    <strong>CSS3: </strong>Stylesheet language used for styling the user
+    interface.
+  </li>
+  <li>
+    <strong>JavaScript: </strong>Programming language for adding interactivity
+    and dynamic behavior to the application.
+  </li>
+  <li>
+    <strong>React: </strong>JavaScript library for building reusable UI
+    components.
+  </li>
+</ul>
+
 <div style="display: flex; flex-direction: column; gap: 10px;">
 
-<h3>Front end Tecnologies</h3>
+ 
 <div style="display: flex; flex-direction: row; gap: 5px;">
 <img  align="center" alt="Html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 
@@ -11,50 +33,153 @@
 
    <img align="center" alt="REACT" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 
-   <img align="center" alt="TS" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
 </div>
 
-<h3>Back end Tecnologies</h3>
-<div style="display: flex; flex-direction: row; gap: 5px;">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
-     </br>
-     <img align="center" alt="TS" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-     <img align="center" alt="TS" src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white">
-</div>
+## Project Structure
 
+```
+├── src
+│   │── assests
+│   ├── components
+│   │   ├── Header.jsx
+│   │   ├── Banner.jsx
+│   │   └── ...
+│   ├── contexts
+│   │   ├── AuthContext.jsx
+│   ├── data
+│   │   ├── hogwarst.js
+│   │   ├── houses.js
+│   │   └── ...
+│   ├── pages
+│   │   ├── Home
+│   │   ├── Welcome
+│   │   └── ...
+│   ├── services
+│   │   ├── harryPotterAPI.js
+│   │   ├── api.js
+│   │   └── ...
+│   ├── styles
+│   │   ├── App.css
+│   │   ├── globalStyle.js
+│   │   └── ...
+│   ├── App.jsx
+│   ├── index.jsx
+│   └── ...
+├── public
+│   ├── index.html
+│   ├── package.json
+│   ├── README.md
+│   └── .gitignore
+└── ...
 
-<h3>Workflow</h3>
-<div style="display: flex; flex-direction: row; gap: 5px;">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white">
-</div>
+```
 
-<h3>Banco de Dados</h3>
-<div style="display: flex; flex-direction: row; gap: 5px;">
- <img align="center" alt="TS" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
-         <img align="center" alt="TS" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
-      <img align="center" alt="TS" src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white">
-</div>
+## Pages
+<ul>
+  <li>
+    <strong>Welcome: </strong>
+    This is the welcome page of the application, where users are greeted with an animation. This page serves as the gateway to the main page. By clicking on "Enter," you will be redirected to the main page.
+  </li>
+  <li>
+    <strong>Home: </strong>
+    The home page, also known as the main page, is where you'll find all the informative content. It serves as the central hub of the application, providing users with access to various features, sections, and resources. 
+  </li>
+  <li>
+    <strong> Spell Book: </strong>
+   The Spell Book is a separate page where users can explore the "dictionary" of spells. It is a dedicated section within the application that provides a comprehensive collection of magical spells and their descriptions. 
+  </li>
+  
+ 
+</ul>
 
-<h3>Skills - Versionamento</h3>
-<div style="display: flex; flex-direction: row; gap: 5px;">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+## Styling
 
-</div>
-
-
-
-<h3>Design</h3>
+<ul>
+  <li>
+    <strong> Styled Components: </strong>
+   We leverage Styled Components to define the layout and
+    styling of our components.
+  </li>
+  <li>
+    <strong>Global Styles: </strong>
+    We utilize global styles to establish a standardized styling
+    configuration for our application. These global styles ensure consistency
+    and provide a cohesive look and feel across different components and pages.
+  </li>
+  <li>
+    Use responsive design principles to ensure the application is
+    mobile-friendly.
+  </li>
+  <h3>Design</h3>
 <div style="display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap; width: 100%;">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Adobe%20after%20affects-CF96FD?style=for-the-badge&logo=Adobe%20after%20effects&logoColor=393665">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Behance-0054F7?style=for-the-badge&logo=behance&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white">
-<img align="center" alt="TS" src="https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white">
 
+<img align="center" alt="TS" src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black">
 
 </div>
+</ul>
+
+## Third-Party Libraries
+<ul>
+    
+  <li><strong>axios: </strong> Promise-based HTTP client for making API requests.</li>
+  <li>
+    <strong>react-router-dom: </strong>Library for handling routing and navigation within the
+    application.
+  </li>
+  <li>
+   <strong> styled-components: </strong>Library for styling React components using tagged
+    template literals.
+  </li>
+  <li>
+    <strong>framer-motion: </strong>Library for creating smooth animations and interactive UIs.
+  </li>
+ 
+</ul>
+
+## Development Guidelines
+<ul>
+  
+  <li>Use Git for version control and follow GitFlow branching model.</li>
+  <li>Write clean, modular, and reusable code.</li>  
+  <li>Use formatting tools for code quality and consistency.</li>
+</ul>
+
+## Getting Started 
+
+To set up the front-end development environment and start the application locally:
+
+<ol>
+  <li>Clone the repository from GitHub.</li>
+  <li>Install the required dependencies using yarn install.</li>
+  <li>Start the development server with yarn dev.</li>
+  <li>Access the application in your web browser at <strong>http://localhost:3000 </strong> </li>
+</ol>
+
+## Deployment 
+Deploy the front-end application to a suitable hosting platform vercel for production use. Check the deploy link - https://magic-school.vercel.app/
+
+## Additional Resources
+
+<ul>
+  <li>
+    <a href="https://reactjs.org/docs/getting-started.html"
+      >React documentation</a
+    >
+  </li>
+ 
+  <li>
+    <a href="https://css-tricks.com/">CSS Tricks :</a> Website with CSS tutorials
+    and resources.
+  </li>
+  <li>
+    <a href="https://developer.mozilla.org/en-US/">MDN Web Docs: </a
+    >Comprehensive web development documentation.
+  </li>
+</ul>
+
+
+
+
+
+
+
