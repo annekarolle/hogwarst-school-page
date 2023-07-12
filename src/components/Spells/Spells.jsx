@@ -8,6 +8,7 @@ import openBook from "../../Assests/img/hp/sub/Camada 3.png";
 import book from "../../Assests/img/hp/sub/Camada 7.png";
 import Modal from "../Modal/Modal.jsx/Modal";
 import { Lights } from "../Ligths/ligths";
+import harryPotterAPI from "../../services/harryPotterAPI";
 
 export const Spells = () => {
   const { spells, getSpells, openModal, setOpenModal, setSpells } =
@@ -16,8 +17,22 @@ export const Spells = () => {
   const [endIndex, setEndIndex] = useState(10);
   const [selectedSpell, setSelectedSpell] = useState("");
   const [filter, setFilter] = useState("");
+  const [originalSpells, setOriginalSpells] = useState([]);
+
+  
 
   useEffect(() => {
+    const fetchSpells = async () => {
+      try {
+        const response = await harryPotterAPI.get('/Spells');    
+        setOriginalSpells(response.data);
+     
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    fetchSpells();
     getSpells();
   }, []);
 
@@ -54,13 +69,13 @@ export const Spells = () => {
   const filteredSpells = (filter, clearFilter) => {
     if (clearFilter) {
       setFilter('');  
-      getSpells();  
+     getSpells()
     } else if (filter === '') {
-      getSpells();  
-    } else {
-      const filtrado = spells.filter((spell) =>
+      getSpells()
+    } else {       
+      const filtrado = originalSpells.filter((spell) =>
         spell.name.toLowerCase().includes(filter.toLowerCase())
-      );
+      );      
       setSpells(filtrado);
     }
   };
@@ -89,7 +104,7 @@ export const Spells = () => {
               <ul>
                 <div className="ligths-container ">
                   <Lights />
-                </div>
+                </div>              
                 {spells.slice(startIndex, endIndex).map((item, index) => (
                   <>
                     <motion.li
@@ -187,8 +202,14 @@ export const Spells = () => {
           </>
         ) : (
           <>
+          {spells ? (
+            
+            <span>The spell <strong>{filter}</strong> has not been found. Make sure you "spells" correctly.</span>
+          ) : (
+            
             <span>Carregando...</span>
-          </>
+          )}
+        </>
         )}
       </div>
     </ContainerSpells>

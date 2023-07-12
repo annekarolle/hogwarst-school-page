@@ -1,4 +1,4 @@
-import { CarouselContainer, ContainerBanner, ContainerText } from "./style";
+import { CarouselContainer, ContainerBanner, ContainerText, Containerimagem } from "./style";
 import imagem1 from "../../Assests/img/wallpaper/imagem (1).png"
 import imagem2 from "../../Assests/img/wallpaper/imagem (2).png"
 import imagem3 from "../../Assests/img/wallpaper/imagem (3).png"
@@ -24,28 +24,32 @@ export const Banner = () => {
   }, []);
 
   return (
-    <ContainerBanner>
+
+    <Containerimagem >
+        <img src={imagem1} alt="" class="carousel-image" />
+    </Containerimagem>
+    // <ContainerBanner>
     
 
-      <CarouselContainer>
-        {/* {imagens.map((imagem, index) => (
-          <motion.img
-          key={index}
-          src={imagem}
-          alt=""
-          className={`carousel-image ${
-            index === currentIndex ? "active" : ""
-          }`}
-          initial={{ x: "100%", opacity: 0 }}
-          animate={{ x: "0%", opacity: 1, transition: { delay: (index - currentIndex) * 0.4 }}}
-          exit={{ x: "-100%", opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        />
-        ))} */}
+    //   <CarouselContainer>
+    //     {/* {imagens.map((imagem, index) => (
+    //       <motion.img
+    //       key={index}
+    //       src={imagem}
+    //       alt=""
+    //       className={`carousel-image ${
+    //         index === currentIndex ? "active" : ""
+    //       }`}
+    //       initial={{ x: "100%", opacity: 0 }}
+    //       animate={{ x: "0%", opacity: 1, transition: { delay: (index - currentIndex) * 0.4 }}}
+    //       exit={{ x: "-100%", opacity: 0 }}
+    //       transition={{ duration: 1, ease: "easeInOut" }}
+    //     />
+    //     ))} */}
 
-        <img src={imagem1} alt="" class="carousel-image"/>
-      </CarouselContainer>
-    </ContainerBanner>
+    //   
+    //   </CarouselContainer>
+    // </ContainerBanner>
   );
 };
 

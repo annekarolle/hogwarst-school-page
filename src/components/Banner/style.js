@@ -65,6 +65,32 @@ export const CarouselContainer = styled.div`
     }
 `
 
+export const Containerimagem = styled.div`
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 750px) { 
+      height: 525px;
+
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    
+    }
+`
+
 
 
 

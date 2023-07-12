@@ -99,8 +99,8 @@ export const ContainerHeader = styled.div`
   position: absolute;
   top: calc(100% + 5px);
   left: 0;
-  background-color: #ffff;
-  border-left: 4px solid var(--gold-3);
+  background-color: var(--gold-8);
+  border-left: 4px solid var(--gold-4);
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ export const ContainerHeader = styled.div`
 
 
 .dropdown-options-link{
-  color: var(--gold); 
+  color: var(--gold-1); 
   font-size: 14px; 
   text-decoration: none;
 }

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { ContainerHeader } from "./headerStyle";
 import { useNavigate } from "react-router-dom";
+import logo from "../../Assests/img/logo.png"
+import {motion} from "framer-motion"
 
 export const HeaderComp = ({ onChangeContent }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -33,7 +35,20 @@ export const HeaderComp = ({ onChangeContent }) => {
       <ContainerHeader>
         <div className="navegador">
           <div>
-            <h1 onClick={() => navigate("/home")} className="btn-logo">Magic School</h1>
+            {/* <motion.img src={logo} alt="" onClick={() => navigate("/home")} className="btn-logo" initial={{ filter:"brightness(1)" }}
+              animate={{  filter:"brightness(1.1)"}}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "loop",}}/>   */}
+    <motion.h1 onClick={() => navigate("/home")} style={{color:"var(--gold)"}} initial={{ filter:"brightness(1)" }}
+              animate={{  filter:"brightness(1.1)"}}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                repeatType: "loop",}}>
+      Magic School
+    </motion.h1>
           </div>
 
           <div>
